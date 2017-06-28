@@ -1,39 +1,34 @@
-import java.util.Objects;
-
 public class TennisGame1 implements TennisGame {
 
-    private int m_score1 = 0;
-    private Player player1Name;
-    private int m_score2 = 0;
-    private Player player2Name;
+    private Player player1;
+    private Player player2;
 
     public TennisGame1(String player1Name, String player2Name) {
-        this.player1Name = new Player(player1Name);
-        this.player2Name = new Player(player2Name);
+        this.player1 = new Player(player1Name);
+        this.player2 = new Player(player2Name);
     }
 
     public void wonPoint(String playerName) {
-        if (player1Name.compareToString(playerName))
-            m_score1 += 1;
-        else
-            m_score2 += 1;
+        if (player1.compareToString(playerName)) {
+            player1.updateScore();
+        } else {
+            player2.updateScore();
+        }
     }
 
     public String getScore() {
-        String score;
-        if (m_score1 == m_score2) {
-            score = equalityScore();
-        } else if (m_score1 >= 4 || m_score2 >= 4) {
-            score = highScoreToString();
+        if (player1.isAtEqualityWith(player2)) {
+            return equalityScore();
+        } else if (player1.hasMoreThan(4) || player2.hasMoreThan(4)) {
+            return highScoreToString();
         } else {
-            score = lowScoreToString();
+            return lowScoreToString();
         }
-        return score;
     }
 
     private String highScoreToString() {
         String score;
-        int minusResult = m_score1 - m_score2;
+        int minusResult = player1.compareScoreTo(player2);
         if (minusResult == 1) {
             score = "Advantage player1";
         } else if (minusResult == -1) {
@@ -48,7 +43,7 @@ public class TennisGame1 implements TennisGame {
 
     private String equalityScore() {
         String score;
-        switch (m_score1) {
+        switch (player1.getScore()) {
             case 0:
                 score = "Love-All";
                 break;
@@ -69,12 +64,12 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String lowScoreToString() {
-        return pointToScore(m_score1) + "-" + pointToScore(m_score2);
+        return pointToScore(player1.getScore()) + "-" + pointToScore(player2.getScore());
     }
 
-    private String pointToScore(int tempScore) {
+    private String pointToScore(int score) {
         String result = "";
-        switch (tempScore) {
+        switch (score) {
             case 0:
                 result = "Love";
                 break;
