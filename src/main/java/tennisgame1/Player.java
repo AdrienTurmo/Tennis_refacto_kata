@@ -1,14 +1,17 @@
+package tennisgame1;
+
 import java.util.Objects;
+
+import static tennisgame1.Score.LOVE;
 
 public class Player {
     private String playerName;
-    private int score;
+    private int score = 0;
+    private Score scoreEnum = LOVE;
 
     public Player(String playerName) {
         this.playerName = playerName;
-        this.score = 0;
     }
-
 
     public boolean compareToString(String playerName) {
         return Objects.equals(this.playerName, playerName);
@@ -16,6 +19,7 @@ public class Player {
 
     public void Scored() {
         score++;
+        scoreEnum = scoreEnum.update();
     }
 
     public boolean isAtEqualityWith(Player oppositePlayer) {
@@ -26,27 +30,8 @@ public class Player {
         return this.score >= 4;
     }
 
-    String pointToScore() {
-        String result = "";
-        switch (score) {
-            case 0:
-                result = "Love";
-                break;
-            case 1:
-                result = "Fifteen";
-                break;
-            case 2:
-                result = "Thirty";
-                break;
-            case 3:
-                result = "Forty";
-                break;
-        }
-        return result;
-    }
-
     public String compareScoreToString(Player oppositePlayer) {
-        int minusResult = this.score-oppositePlayer.score;
+        int minusResult = this.score - oppositePlayer.score;
         if (minusResult == 1) {
             return "Advantage " + this.playerName;
         } else if (minusResult == -1) {
@@ -58,10 +43,10 @@ public class Player {
         }
     }
 
-    String equalityScore() {
+    public String equalityScore() {
         if (hasMoreThanForty()) {
             return "Deuce";
         }
-        return pointToScore() + "-All";
+        return scoreEnum.toString() + "-All";
     }
 }

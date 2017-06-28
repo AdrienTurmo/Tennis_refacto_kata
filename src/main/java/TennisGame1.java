@@ -1,3 +1,5 @@
+import tennisgame1.Player;
+
 public class TennisGame1 implements TennisGame {
 
     private Player player1;
@@ -22,7 +24,7 @@ public class TennisGame1 implements TennisGame {
         } else if (player1.hasMoreThanForty() || player2.hasMoreThanForty()) {
             return player1.compareScoreToString(player2);
         } else {
-            return player1.pointToScore() + "-" + player2.pointToScore();
+            return player1.scoreEnum.toString() + "-" + player2.scoreEnum.toString();
         }
     }
 
