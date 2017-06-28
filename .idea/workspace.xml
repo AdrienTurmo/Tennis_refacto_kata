@@ -44,26 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TennisGame1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TennisGame1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="717">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="e#267#268#0" expanded="true" />
                 <element signature="e#333#334#0" expanded="true" />
@@ -613,13 +608,17 @@
       <option name="project" value="LOCAL" />
       <updated>1498656228999</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="transferred score comparison to Player">
+      <created>1498658572464</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1498658572464</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 22m 50s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 23m 20s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
     </history-entry>
@@ -645,6 +644,9 @@
       <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 59m 21s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 16h 06m 18s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -691,7 +693,8 @@
     <MESSAGE value="Refacto : extract methods" />
     <MESSAGE value="Introduce player class" />
     <MESSAGE value="Encapsulate name and score onto Player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encapsulate name and score onto Player" />
+    <MESSAGE value="transferred score comparison to Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="transferred score comparison to Player" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -751,10 +754,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="717">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="e#267#268#0" expanded="true" />
             <element signature="e#333#334#0" expanded="true" />
@@ -764,19 +775,6 @@
             <element signature="e#498#499#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
             <element signature="e#577#578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
           </folding>
         </state>
       </provider>

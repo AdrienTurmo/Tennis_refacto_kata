@@ -18,27 +18,12 @@ public class TennisGame1 implements TennisGame {
 
     public String getScore() {
         if (player1.isAtEqualityWith(player2)) {
-            return equalityScore();
+            return player1.equalityScore();
         } else if (player1.hasMoreThanForty() || player2.hasMoreThanForty()) {
-            return highScoreToString();
+            return player1.compareScoreToString(player2);
         } else {
-            return lowScoreToString();
+            return player1.pointToScore() + "-" + player2.pointToScore();
         }
-    }
-
-    private String equalityScore() {
-        if (!player1.hasMoreThanForty()) {
-            return player1.pointToScore() + "-All";
-        }
-        return "Deuce";
-    }
-
-    private String highScoreToString() {
-        return player1.compareScoreToString(player2);
-    }
-
-    private String lowScoreToString() {
-        return player1.pointToScore() + "-" + player2.pointToScore();
     }
 
 }

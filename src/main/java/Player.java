@@ -57,4 +57,11 @@ public class Player {
             return "Win for " + oppositePlayer.playerName;
         }
     }
+
+    String equalityScore() {
+        if (hasMoreThanForty()) {
+            return "Deuce";
+        }
+        return pointToScore() + "-All";
+    }
 }
