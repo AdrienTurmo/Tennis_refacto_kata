@@ -47,9 +47,14 @@
       <file leaf-file-name="TennisGame1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="292">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,20 +62,17 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="300">
+              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#661#662#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#446#447#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -235,6 +237,9 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="Player" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
@@ -601,38 +606,45 @@
       <option name="project" value="LOCAL" />
       <updated>1498654478775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Encapsulate name and score onto Player">
+      <created>1498656228999</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1498656228999</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_(1) - 2017.06.28 at 15h 16m 52s.xml">
-      <configuration name="TennisTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_(1) - 2017.06.28 at 15h 17m 21s.xml">
-      <configuration name="TennisTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_(1) - 2017.06.28 at 15h 17m 25s.xml">
-      <configuration name="TennisTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_(1) - 2017.06.28 at 15h 19m 44s.xml">
-      <configuration name="TennisTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_(1) - 2017.06.28 at 15h 19m 50s.xml">
-      <configuration name="TennisTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 19m 57s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 21m 22s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 22m 28s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 22m 50s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 23m 20s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 31m 38s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 35m 09s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 45m 06s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 48m 33s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 48m 49s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 56m 51s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 57m 20s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame1 - 2017.06.28 at 15h 59m 21s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame1" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -678,7 +690,8 @@
     <MESSAGE value="Refacto : create pointToScore to map score&lt;=4 to related tennis term" />
     <MESSAGE value="Refacto : extract methods" />
     <MESSAGE value="Introduce player class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduce player class" />
+    <MESSAGE value="Encapsulate name and score onto Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Encapsulate name and score onto Player" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -740,29 +753,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="300">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="292">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

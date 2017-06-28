@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Player {
     private String playerName;
     private int score;
@@ -9,10 +11,10 @@ public class Player {
 
 
     public boolean compareToString(String playerName) {
-        return this.playerName == playerName;
+        return Objects.equals(this.playerName, playerName);
     }
 
-    public void updateScore() {
+    public void Scored() {
         score++;
     }
 
@@ -20,15 +22,39 @@ public class Player {
         return score == oppositePlayer.score;
     }
 
-    public boolean hasMoreThan(int score) {
-        return this.score >= score;
+    public boolean hasMoreThanForty() {
+        return this.score >= 4;
     }
 
-    public int compareScoreTo(Player oppositePlayer) {
-        return this.score - oppositePlayer.score;
+    String pointToScore() {
+        String result = "";
+        switch (score) {
+            case 0:
+                result = "Love";
+                break;
+            case 1:
+                result = "Fifteen";
+                break;
+            case 2:
+                result = "Thirty";
+                break;
+            case 3:
+                result = "Forty";
+                break;
+        }
+        return result;
     }
 
-    public int getScore() {
-        return score;
+    public String compareScoreToString(Player oppositePlayer) {
+        int minusResult = this.score-oppositePlayer.score;
+        if (minusResult == 1) {
+            return "Advantage " + this.playerName;
+        } else if (minusResult == -1) {
+            return "Advantage " + oppositePlayer.playerName;
+        } else if (minusResult >= 2) {
+            return "Win for " + this.playerName;
+        } else {
+            return "Win for " + oppositePlayer.playerName;
+        }
     }
 }
