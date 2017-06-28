@@ -6,8 +6,29 @@ public enum Score {
     THIRTY("Thirty"),
     FORTY("Forty"){
         @Override
-        public Score update() {
-            return FORTY;
+        public Score scored(Score scoreEnum) {
+            if (scoreEnum.ordinal()<3){
+                return WIN;
+            };
+            return DEUCE;
+        }
+
+        @Override
+        public Score oppositePlayerScored() {
+            return DEUCE;
+        }
+    },
+    DEUCE("Deuce"),
+    ADVANTAGE("Advantage") {
+        @Override
+        public Score oppositePlayerScored() {
+            return DEUCE;
+        }
+    },
+    WIN("Win") {
+        @Override
+        public Score scored(Score scoreEnum) {
+            return WIN;
         }
     };
 
@@ -17,8 +38,12 @@ public enum Score {
         this.name = name;
     }
 
-    public Score update(){
-        return Score.values()[this.ordinal()+1];
+    public Score oppositePlayerScored() {
+        return this;
+    }
+
+    public Score scored(Score scoreEnum) {
+        return Score.values()[this.ordinal() + 1];
     }
 
     public String toString() {

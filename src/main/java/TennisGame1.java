@@ -12,9 +12,11 @@ public class TennisGame1 implements TennisGame {
 
     public void wonPoint(String playerName) {
         if (player1.compareToString(playerName)) {
-            player1.Scored();
+            player1.scored(player2);
+            player2.oppositePlayerScored();
         } else {
-            player2.Scored();
+            player2.scored(player1);
+            player1.oppositePlayerScored();
         }
     }
 
@@ -24,7 +26,7 @@ public class TennisGame1 implements TennisGame {
         } else if (player1.hasMoreThanForty() || player2.hasMoreThanForty()) {
             return player1.compareScoreToString(player2);
         } else {
-            return player1.scoreEnum.toString() + "-" + player2.scoreEnum.toString();
+            return player1.pointToScore() + "-" + player2.pointToScore();
         }
     }
 

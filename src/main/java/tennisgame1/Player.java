@@ -2,7 +2,7 @@ package tennisgame1;
 
 import java.util.Objects;
 
-import static tennisgame1.Score.LOVE;
+import static tennisgame1.Score.*;
 
 public class Player {
     private String playerName;
@@ -17,9 +17,13 @@ public class Player {
         return Objects.equals(this.playerName, playerName);
     }
 
-    public void Scored() {
+    public void scored(Player oppositePlayer) {
         score++;
-        scoreEnum = scoreEnum.update();
+        scoreEnum = scoreEnum.scored(oppositePlayer.scoreEnum);
+    }
+
+    public void oppositePlayerScored() {
+        scoreEnum.oppositePlayerScored();
     }
 
     public boolean isAtEqualityWith(Player oppositePlayer) {
@@ -27,7 +31,11 @@ public class Player {
     }
 
     public boolean hasMoreThanForty() {
-        return this.score >= 4;
+        return this.scoreEnum.ordinal() > FORTY.ordinal();
+    }
+
+    public String pointToScore() {
+        return this.scoreEnum.toString();
     }
 
     public String compareScoreToString(Player oppositePlayer) {
@@ -47,6 +55,7 @@ public class Player {
         if (hasMoreThanForty()) {
             return "Deuce";
         }
-        return scoreEnum.toString() + "-All";
+        return pointToScore() + "-All";
     }
+
 }
