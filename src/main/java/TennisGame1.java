@@ -48,35 +48,31 @@ public class TennisGame1 implements TennisGame {
             else if (minusResult >= 2) score = "Win for player1";
             else score = "Win for player2";
         } else {
-            for (int i = 1; i < 3; i++) {
-                if (i == 1) {
-                    tempScore = m_score1;
-                }
-                else {
-                    score += "-";
-                    tempScore = m_score2;
-                }
-                score = lowScoreToString(score, tempScore);
-            }
+            score = lowScoreToString();
         }
         return score;
     }
 
-    private String lowScoreToString(String score, int tempScore) {
+    private String lowScoreToString() {
+        return pointToScore(m_score1) + "-" + pointToScore(m_score2);
+    }
+
+    private String pointToScore(int tempScore) {
+        String result = "";
         switch (tempScore) {
             case 0:
-                score += "Love";
+                result = "Love";
                 break;
             case 1:
-                score += "Fifteen";
+                result = "Fifteen";
                 break;
             case 2:
-                score += "Thirty";
+                result = "Thirty";
                 break;
             case 3:
-                score += "Forty";
+                result = "Forty";
                 break;
         }
-        return score;
+        return result;
     }
 }
