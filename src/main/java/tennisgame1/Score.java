@@ -6,28 +6,36 @@ public enum Score {
     THIRTY("Thirty"),
     FORTY("Forty"){
         @Override
-        public Score scored(Score scoreEnum) {
-            if (scoreEnum.ordinal()<3){
+        public Score scored(Score oppositePlayerScore) {
+            if (oppositePlayerScore.ordinal()<3){
                 return WIN;
-            };
+            }
+            if (oppositePlayerScore == FORTY) {
+                return ADVANTAGE;
+            }
             return DEUCE;
+        }
+    },
+    DEUCE("Deuce"){
+        @Override
+        public Score scored(Score oppositePlayerScore) {
+            return ADVANTAGE;
         }
 
         @Override
-        public Score oppositePlayerScored() {
+        public Score oppositePlayerScored(Score oppositePlayerScore) {
+            return FORTY;
+        }
+    },
+    ADVANTAGE("Advantage ") {
+        @Override
+        public Score oppositePlayerScored(Score oppositePlayerScore) {
             return DEUCE;
         }
     },
-    DEUCE("Deuce"),
-    ADVANTAGE("Advantage") {
+    WIN("Win for ") {
         @Override
-        public Score oppositePlayerScored() {
-            return DEUCE;
-        }
-    },
-    WIN("Win") {
-        @Override
-        public Score scored(Score scoreEnum) {
+        public Score scored(Score oppositePlayerScore) {
             return WIN;
         }
     };
@@ -38,11 +46,11 @@ public enum Score {
         this.name = name;
     }
 
-    public Score oppositePlayerScored() {
+    public Score oppositePlayerScored(Score oppositePlayerScore) {
         return this;
     }
 
-    public Score scored(Score scoreEnum) {
+    public Score scored(Score oppositePlayerScore) {
         return Score.values()[this.ordinal() + 1];
     }
 
