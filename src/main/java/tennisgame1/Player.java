@@ -20,8 +20,8 @@ public class Player {
         scoreEnum = scoreEnum.scored(oppositePlayer.scoreEnum);
     }
 
-    public void oppositePlayerScored(Player oppositePlayer) {
-        scoreEnum = scoreEnum.oppositePlayerScored(oppositePlayer.scoreEnum);
+    public void oppositePlayerScored() {
+        scoreEnum = scoreEnum.oppositePlayerScored();
     }
 
     public boolean isAtEqualityWith(Player oppositePlayer) {

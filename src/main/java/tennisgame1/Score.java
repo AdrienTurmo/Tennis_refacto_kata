@@ -23,13 +23,13 @@ public enum Score {
         }
 
         @Override
-        public Score oppositePlayerScored(Score oppositePlayerScore) {
+        public Score oppositePlayerScored() {
             return FORTY;
         }
     },
     ADVANTAGE("Advantage ") {
         @Override
-        public Score oppositePlayerScored(Score oppositePlayerScore) {
+        public Score oppositePlayerScored() {
             return DEUCE;
         }
     },
@@ -46,7 +46,7 @@ public enum Score {
         this.name = name;
     }
 
-    public Score oppositePlayerScored(Score oppositePlayerScore) {
+    public Score oppositePlayerScored() {
         return this;
     }
 

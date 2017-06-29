@@ -13,10 +13,10 @@ public class TennisGame1 implements TennisGame {
     public void wonPoint(String playerName) {
         if (player1.compareToString(playerName)) {
             player1.scored(player2);
-            player2.oppositePlayerScored(player1);
+            player2.oppositePlayerScored();
         } else {
             player2.scored(player1);
-            player1.oppositePlayerScored(player2);
+            player1.oppositePlayerScored();
         }
     }
 
