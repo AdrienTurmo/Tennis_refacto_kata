@@ -21,19 +21,21 @@ public class TennisGame2 implements TennisGame {
         if (scoreDifference == 0) {
             return "Deuce";
         }
-        if (scoreDifference == 1) {
-            return "Advantage " + player1.getName();
+
+        String score;
+        if (Math.abs(scoreDifference) == 1) {
+            score = "Advantage ";
+        } else {
+            score = "Win for ";
         }
-        if (scoreDifference == -1) {
-            return "Advantage " + player2.getName();
+
+        if (scoreDifference > 0) {
+            score += player1.getName();
+        } else {
+            score += player2.getName();
         }
-        if (scoreDifference >= 2) {
-            return "Win for " + player1.getName();
-        }
-        if (scoreDifference <= -2) {
-            return "Win for " + player2.getName();
-        }
-        return "";
+
+        return score;
     }
 
     private boolean bothPlayerAreUnderForty() {

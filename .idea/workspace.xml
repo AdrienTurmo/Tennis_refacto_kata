@@ -8,7 +8,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TennisGame2.class" afterPath="$PROJECT_DIR$/target/classes/TennisGame2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TennisGame2.java" afterPath="$PROJECT_DIR$/src/main/java/TennisGame2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tennisgame2/Player.java" afterPath="$PROJECT_DIR$/src/main/java/tennisgame2/Player.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="TennisGame2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="525">
+              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -804,28 +803,17 @@
       <option name="project" value="LOCAL" />
       <updated>1500910398290</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="TennisGame2 : regroup and simplify if statement + extract hasunderforty">
+      <created>1500912310847</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1500912310847</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 36m 47s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 37m 04s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 37m 20s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 37m 54s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 58m 29s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 59m 41s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 01m 12s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
@@ -836,6 +824,24 @@
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 04m 34s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 05m 45s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 06m 22s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 06m 35s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 12m 13s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 13m 03s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 14m 32s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -918,7 +924,8 @@
     <MESSAGE value="TennisGame2 : introduce else to simplify if statement" />
     <MESSAGE value="TennisGame2 : extract hasLessThan and compareScoreTo methods" />
     <MESSAGE value="TennisGame2 : getter for point in Player class deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="TennisGame2 : getter for point in Player class deleted" />
+    <MESSAGE value="TennisGame2 : regroup and simplify if statement + extract hasunderforty" />
+    <option name="LAST_COMMIT_MESSAGE" value="TennisGame2 : regroup and simplify if statement + extract hasunderforty" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="525">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
