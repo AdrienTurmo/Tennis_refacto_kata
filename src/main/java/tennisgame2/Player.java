@@ -39,7 +39,7 @@ public class Player {
         return this.points < points;
     }
 
-    public boolean hasLessThan(Player player) {
-        return this.points < player.points;
+    public int compareScoreTo(Player player) {
+        return this.points - player.points;
     }
 }

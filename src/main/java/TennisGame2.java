@@ -29,17 +29,18 @@ public class TennisGame2 implements TennisGame {
         if (player1Points != player2Points && player1.hasLessThan(FORTY) && player2.hasLessThan(FORTY)) {
             score = player1.tennisScore() + "-" + player2.tennisScore();
         } else {
-            if (player2.hasLessThan(player1)) {
+            int scoreDifference = player1.compareScoreTo(player2);
+
+            if (scoreDifference >= 1) {
                 score = "Advantage " + player1.getName();
             }
-            if (player1.hasLessThan(player2Points)) {
+            if (scoreDifference <= -1) {
                 score = "Advantage " + player2.getName();
             }
-
-            if (player1Points - player2Points >= 2) {
+            if (scoreDifference >= 2) {
                 score = "Win for " + player1.getName();
             }
-            if (player2Points - player1Points >= 2) {
+            if (scoreDifference <= -2) {
                 score = "Win for " + player2.getName();
             }
         }
