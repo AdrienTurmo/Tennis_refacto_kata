@@ -20,7 +20,7 @@ public class TennisGame2 implements TennisGame {
         int player2Point = player2.getPoint();
 
         if (player1Point == player2Point && player1Point < 4) {
-            score = pointToTennisScore(player1Point);
+            score = player1.pointToTennisScore();
             score += "-All";
         }
 
@@ -29,8 +29,8 @@ public class TennisGame2 implements TennisGame {
         }
 
         if (player1Point != player2Point && player1Point < 4) {
-            player1TennisScore = pointToTennisScore(player1Point);
-            player2TennisScore = pointToTennisScore(player2Point);
+            player1TennisScore = player1.pointToTennisScore();
+            player2TennisScore = player2.pointToTennisScore();
             score = player1TennisScore + "-" + player2TennisScore;
         }
 
@@ -49,24 +49,6 @@ public class TennisGame2 implements TennisGame {
             score = "Win for " + player2.getName();
         }
         return score;
-    }
-
-    private String pointToTennisScore(int player1Point) {
-        String player1TennisScore;
-        player1TennisScore = "";
-        if (player1Point == 0) {
-            player1TennisScore = "Love";
-
-        } else if (player1Point == 1) {
-            player1TennisScore = "Fifteen";
-
-        } else if (player1Point == 2) {
-            player1TennisScore = "Thirty";
-
-        } else if (player1Point == 3) {
-            player1TennisScore = "Forty";
-        }
-        return player1TennisScore;
     }
 
     public void wonPoint(String player) {

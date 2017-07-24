@@ -20,4 +20,18 @@ public class Player {
     public void scored() {
         point++;
     }
+
+    public String pointToTennisScore() {
+        switch (point) {
+            case 0:
+                return "Love";
+            case 1:
+                return "Fifteen";
+            case 2:
+                return "Thirty";
+            case 3:
+                return "Forty";
+        }
+        return "";
+    }
 }
