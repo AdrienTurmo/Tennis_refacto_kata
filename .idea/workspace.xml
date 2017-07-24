@@ -39,8 +39,8 @@
       <file leaf-file-name="TennisGame2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="292">
+              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -754,19 +754,17 @@
       <option name="project" value="LOCAL" />
       <updated>1500907804673</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="TennisGame2 : delete two useless if">
+      <created>1500908014290</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1500908014290</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 16h 36m 25s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 16h 37m 29s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 16h 41m 37s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 16h 46m 35s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
@@ -786,6 +784,15 @@
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 16h 53m 13s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 16h 53m 58s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 16h 54m 46s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 16h 55m 07s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -860,7 +867,9 @@
     <MESSAGE value="TennisGame2 : P1res and P2res converted to local variables" />
     <MESSAGE value="TennisGame2 : extract Player class" />
     <MESSAGE value="TennisGame2 : extract pointToScoreMethod" />
-    <option name="LAST_COMMIT_MESSAGE" value="TennisGame2 : extract pointToScoreMethod" />
+    <MESSAGE value="TennisGame2 : delete useless if" />
+    <MESSAGE value="TennisGame2 : delete two useless if" />
+    <option name="LAST_COMMIT_MESSAGE" value="TennisGame2 : delete two useless if" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1100,8 +1109,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="292">
+          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

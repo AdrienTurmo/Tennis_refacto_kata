@@ -28,15 +28,9 @@ public class TennisGame2 implements TennisGame {
             score = "Deuce";
         }
 
-        if (player1Point > player2Point && player1Point < 4) {
+        if (player1Point != player2Point && player1Point < 4) {
             player1TennisScore = pointToTennisScore(player1Point);
             player2TennisScore = pointToTennisScore(player2Point);
-            score = player1TennisScore + "-" + player2TennisScore;
-        }
-
-        if (player2Point > player1Point && player2Point < 4) {
-            player2TennisScore = pointToTennisScore(player2Point);
-            player1TennisScore = pointToTennisScore(player1Point);
             score = player1TennisScore + "-" + player2TennisScore;
         }
 
