@@ -1,18 +1,21 @@
-public class TennisGame2 implements TennisGame {
-    public int P1point = 0;
-    public int P2point = 0;
+import java.util.Objects;
 
-    public String P1res = "";
-    public String P2res = "";
+public class TennisGame2 implements TennisGame {
+    private int P1point = 0;
+    private int P2point = 0;
+
     private String player1Name;
     private String player2Name;
 
-    public TennisGame2(String player1Name, String player2Name) {
+    TennisGame2(String player1Name, String player2Name) {
         this.player1Name = player1Name;
         this.player2Name = player2Name;
     }
 
     public String getScore() {
+        String p1res = "";
+        String p2res = "";
+
         String score = "";
         if (P1point == P2point && P1point < 4) {
             if (P1point == 0)
@@ -30,48 +33,48 @@ public class TennisGame2 implements TennisGame {
 
         if (P1point > 0 && P2point == 0) {
             if (P1point == 1)
-                P1res = "Fifteen";
+                p1res = "Fifteen";
             if (P1point == 2)
-                P1res = "Thirty";
+                p1res = "Thirty";
             if (P1point == 3)
-                P1res = "Forty";
+                p1res = "Forty";
 
-            P2res = "Love";
-            score = P1res + "-" + P2res;
+            p2res = "Love";
+            score = p1res + "-" + p2res;
         }
         if (P2point > 0 && P1point == 0) {
             if (P2point == 1)
-                P2res = "Fifteen";
+                p2res = "Fifteen";
             if (P2point == 2)
-                P2res = "Thirty";
+                p2res = "Thirty";
             if (P2point == 3)
-                P2res = "Forty";
+                p2res = "Forty";
 
-            P1res = "Love";
-            score = P1res + "-" + P2res;
+            p1res = "Love";
+            score = p1res + "-" + p2res;
         }
 
         if (P1point > P2point && P1point < 4) {
             if (P1point == 2)
-                P1res = "Thirty";
+                p1res = "Thirty";
             if (P1point == 3)
-                P1res = "Forty";
+                p1res = "Forty";
             if (P2point == 1)
-                P2res = "Fifteen";
+                p2res = "Fifteen";
             if (P2point == 2)
-                P2res = "Thirty";
-            score = P1res + "-" + P2res;
+                p2res = "Thirty";
+            score = p1res + "-" + p2res;
         }
         if (P2point > P1point && P2point < 4) {
             if (P2point == 2)
-                P2res = "Thirty";
+                p2res = "Thirty";
             if (P2point == 3)
-                P2res = "Forty";
+                p2res = "Forty";
             if (P1point == 1)
-                P1res = "Fifteen";
+                p1res = "Fifteen";
             if (P1point == 2)
-                P1res = "Thirty";
-            score = P1res + "-" + P2res;
+                p1res = "Thirty";
+            score = p1res + "-" + p2res;
         }
 
         if (P1point > P2point && P2point >= 3) {
@@ -92,7 +95,7 @@ public class TennisGame2 implements TennisGame {
     }
 
     public void wonPoint(String player) {
-        if (player == player1Name)
+        if (Objects.equals(player, player1Name))
             P1point++;
         else
             P2point++;
