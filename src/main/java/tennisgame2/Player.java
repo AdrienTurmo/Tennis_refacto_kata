@@ -31,11 +31,11 @@ public class Player {
         return "";
     }
 
-    public boolean hasLessThan(int points) {
-        return this.points < points;
+    public boolean hasLessThanForty() {
+        return this.points < 4;
     }
 
-    public int compareScoreTo(Player player) {
+    public int scoreDifferenceWith(Player player) {
         return this.points - player.points;
     }
 }

@@ -3,7 +3,6 @@ import tennisgame2.Player;
 import java.util.Objects;
 
 public class TennisGame2 implements TennisGame {
-    public static final int FORTY = 4;
     private Player player1;
     private Player player2;
 
@@ -13,34 +12,32 @@ public class TennisGame2 implements TennisGame {
     }
 
     public String getScore() {
-        String score = "";
+        int scoreDifference = player1.scoreDifferenceWith(player2);
 
-        if (player1.compareScoreTo(player2) == 0) {
-            if (player1.hasLessThan(FORTY)) {
-                score = player1.tennisScore();
-                score += "-All";
-            } else {
-                score = "Deuce";
-            }
-        } else if (player1.hasLessThan(FORTY) && player2.hasLessThan(FORTY)) {
-            score = player1.tennisScore() + "-" + player2.tennisScore();
-        } else {
-            int scoreDifference = player1.compareScoreTo(player2);
-
-            if (scoreDifference >= 1) {
-                score = "Advantage " + player1.getName();
-            }
-            if (scoreDifference <= -1) {
-                score = "Advantage " + player2.getName();
-            }
-            if (scoreDifference >= 2) {
-                score = "Win for " + player1.getName();
-            }
-            if (scoreDifference <= -2) {
-                score = "Win for " + player2.getName();
-            }
+        if (bothPlayerAreUnderForty()) {
+            return player1.tennisScore() + "-" + (scoreDifference == 0 ? "All" : player2.tennisScore());
         }
-        return score;
+
+        if (scoreDifference == 0) {
+            return "Deuce";
+        }
+        if (scoreDifference == 1) {
+            return "Advantage " + player1.getName();
+        }
+        if (scoreDifference == -1) {
+            return "Advantage " + player2.getName();
+        }
+        if (scoreDifference >= 2) {
+            return "Win for " + player1.getName();
+        }
+        if (scoreDifference <= -2) {
+            return "Win for " + player2.getName();
+        }
+        return "";
+    }
+
+    private boolean bothPlayerAreUnderForty() {
+        return player1.hasLessThanForty() && player2.hasLessThanForty();
     }
 
     public void wonPoint(String player) {

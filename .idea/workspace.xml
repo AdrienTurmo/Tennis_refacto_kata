@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TennisGame2.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TennisGame2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="217">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame2/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="567">
+              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/src/main/java/TennisGame1.java" />
         <option value="$PROJECT_DIR$/src/main/java/tennisgame1/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/tennisgame1/Score.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TennisGame2.java" />
         <option value="$PROJECT_DIR$/src/main/java/tennisgame2/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TennisGame2.java" />
       </list>
     </option>
   </component>
@@ -797,38 +797,45 @@
       <option name="project" value="LOCAL" />
       <updated>1500910292091</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="TennisGame2 : getter for point in Player class deleted">
+      <created>1500910398290</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1500910398290</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 28m 14s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 36m 47s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 28m 19s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 37m 04s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 28m 49s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 37m 20s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 29m 00s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 37m 54s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 29m 55s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 58m 29s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 30m 01s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 59m 41s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 31m 04s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 01m 12s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 31m 13s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 03m 59s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 32m 16s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 04m 27s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 17h 32m 45s.xml">
+    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 04m 34s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -910,7 +917,8 @@
     <MESSAGE value="TennisGame2 : merge and simplify first two if" />
     <MESSAGE value="TennisGame2 : introduce else to simplify if statement" />
     <MESSAGE value="TennisGame2 : extract hasLessThan and compareScoreTo methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="TennisGame2 : extract hasLessThan and compareScoreTo methods" />
+    <MESSAGE value="TennisGame2 : getter for point in Player class deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="TennisGame2 : getter for point in Player class deleted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1140,21 +1148,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame2/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="567">
+          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame2/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="217">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
