@@ -23,28 +23,17 @@ public class TennisGame2 implements TennisGame {
             score = pointToTennisScore(player1Point);
             score += "-All";
         }
-        if (player1Point == player2Point && player1Point > 3)
+
+        if (player1Point == player2Point && player1Point > 3) {
             score = "Deuce";
-
-        if (player1Point > 0 && player2Point == 0) {
-            player1TennisScore = pointToTennisScore(player1Point);
-
-            player2TennisScore = "Love";
-            score = player1TennisScore + "-" + player2TennisScore;
-        }
-        if (player2Point > 0 && player1Point == 0) {
-            player2TennisScore = pointToTennisScore(player2Point);
-
-            player1TennisScore = "Love";
-            score = player1TennisScore + "-" + player2TennisScore;
         }
 
         if (player1Point > player2Point && player1Point < 4) {
             player1TennisScore = pointToTennisScore(player1Point);
-
             player2TennisScore = pointToTennisScore(player2Point);
             score = player1TennisScore + "-" + player2TennisScore;
         }
+
         if (player2Point > player1Point && player2Point < 4) {
             player2TennisScore = pointToTennisScore(player2Point);
             player1TennisScore = pointToTennisScore(player1Point);
