@@ -12,85 +12,78 @@ public class TennisGame2 implements TennisGame {
     }
 
     public String getScore() {
-        String p1res = "";
-        String p2res = "";
+        String player1TennisScore = "";
+        String player2TennisScore = "";
 
         String score = "";
-        if (player1.getPoint() == player2.getPoint() && player1.getPoint() < 4) {
-            if (player1.getPoint() == 0)
-                score = "Love";
-            if (player1.getPoint() == 1)
-                score = "Fifteen";
-            if (player1.getPoint() == 2)
-                score = "Thirty";
-            if (player1.getPoint() == 3)
-                score = "Forty";
+        int player1Point = player1.getPoint();
+        int player2Point = player2.getPoint();
+
+        if (player1Point == player2Point && player1Point < 4) {
+            score = pointToTennisScore(player1Point);
             score += "-All";
         }
-        if (player1.getPoint() == player2.getPoint() && player1.getPoint() > 3)
+        if (player1Point == player2Point && player1Point > 3)
             score = "Deuce";
 
-        if (player1.getPoint() > 0 && player2.getPoint() == 0) {
-            if (player1.getPoint() == 1)
-                p1res = "Fifteen";
-            if (player1.getPoint() == 2)
-                p1res = "Thirty";
-            if (player1.getPoint() == 3)
-                p1res = "Forty";
+        if (player1Point > 0 && player2Point == 0) {
+            player1TennisScore = pointToTennisScore(player1Point);
 
-            p2res = "Love";
-            score = p1res + "-" + p2res;
+            player2TennisScore = "Love";
+            score = player1TennisScore + "-" + player2TennisScore;
         }
-        if (player2.getPoint() > 0 && player1.getPoint() == 0) {
-            if (player2.getPoint() == 1)
-                p2res = "Fifteen";
-            if (player2.getPoint() == 2)
-                p2res = "Thirty";
-            if (player2.getPoint() == 3)
-                p2res = "Forty";
+        if (player2Point > 0 && player1Point == 0) {
+            player2TennisScore = pointToTennisScore(player2Point);
 
-            p1res = "Love";
-            score = p1res + "-" + p2res;
+            player1TennisScore = "Love";
+            score = player1TennisScore + "-" + player2TennisScore;
         }
 
-        if (player1.getPoint() > player2.getPoint() && player1.getPoint() < 4) {
-            if (player1.getPoint() == 2)
-                p1res = "Thirty";
-            if (player1.getPoint() == 3)
-                p1res = "Forty";
-            if (player2.getPoint() == 1)
-                p2res = "Fifteen";
-            if (player2.getPoint() == 2)
-                p2res = "Thirty";
-            score = p1res + "-" + p2res;
+        if (player1Point > player2Point && player1Point < 4) {
+            player1TennisScore = pointToTennisScore(player1Point);
+
+            player2TennisScore = pointToTennisScore(player2Point);
+            score = player1TennisScore + "-" + player2TennisScore;
         }
-        if (player2.getPoint() > player1.getPoint() && player2.getPoint() < 4) {
-            if (player2.getPoint() == 2)
-                p2res = "Thirty";
-            if (player2.getPoint() == 3)
-                p2res = "Forty";
-            if (player1.getPoint() == 1)
-                p1res = "Fifteen";
-            if (player1.getPoint() == 2)
-                p1res = "Thirty";
-            score = p1res + "-" + p2res;
+        if (player2Point > player1Point && player2Point < 4) {
+            player2TennisScore = pointToTennisScore(player2Point);
+            player1TennisScore = pointToTennisScore(player1Point);
+            score = player1TennisScore + "-" + player2TennisScore;
         }
 
-        if (player1.getPoint() > player2.getPoint() && player2.getPoint() >= 3) {
-            score = "Advantage "+ player1.getName();
+        if (player1Point > player2Point && player2Point >= 3) {
+            score = "Advantage " + player1.getName();
         }
 
-        if (player2.getPoint() > player1.getPoint() && player1.getPoint() >= 3) {
+        if (player2Point > player1Point && player1Point >= 3) {
             score = "Advantage " + player2.getName();
         }
 
-        if (player1.getPoint() >= 4 && player2.getPoint() >= 0 && (player1.getPoint() - player2.getPoint()) >= 2) {
-            score = "Win for "+ player1.getName();
+        if (player1Point >= 4 && player2Point >= 0 && (player1Point - player2Point) >= 2) {
+            score = "Win for " + player1.getName();
         }
-        if (player2.getPoint() >= 4 && player1.getPoint() >= 0 && (player2.getPoint() - player1.getPoint()) >= 2) {
-            score = "Win for "+ player2.getName();
+        if (player2Point >= 4 && player1Point >= 0 && (player2Point - player1Point) >= 2) {
+            score = "Win for " + player2.getName();
         }
         return score;
+    }
+
+    private String pointToTennisScore(int player1Point) {
+        String player1TennisScore;
+        player1TennisScore = "";
+        if (player1Point == 0) {
+            player1TennisScore = "Love";
+
+        } else if (player1Point == 1) {
+            player1TennisScore = "Fifteen";
+
+        } else if (player1Point == 2) {
+            player1TennisScore = "Thirty";
+
+        } else if (player1Point == 3) {
+            player1TennisScore = "Forty";
+        }
+        return player1TennisScore;
     }
 
     public void wonPoint(String player) {
