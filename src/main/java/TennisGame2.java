@@ -14,19 +14,15 @@ public class TennisGame2 implements TennisGame {
 
     public String getScore() {
         String score = "";
-        int player1Points = player1.getPoints();
-        int player2Points = player2.getPoints();
 
-        if (player1Points == player2Points) {
+        if (player1.compareScoreTo(player2) == 0) {
             if (player1.hasLessThan(FORTY)) {
                 score = player1.tennisScore();
                 score += "-All";
             } else {
                 score = "Deuce";
             }
-        }
-
-        if (player1Points != player2Points && player1.hasLessThan(FORTY) && player2.hasLessThan(FORTY)) {
+        } else if (player1.hasLessThan(FORTY) && player2.hasLessThan(FORTY)) {
             score = player1.tennisScore() + "-" + player2.tennisScore();
         } else {
             int scoreDifference = player1.compareScoreTo(player2);
