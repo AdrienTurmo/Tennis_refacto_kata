@@ -1,16 +1,16 @@
 package tennisgame2;
 
 public class Player {
-    private int point;
+    private int points;
     private String name;
 
     public Player(String playerName) {
         this.name = playerName;
-        point = 0;
+        points = 0;
     }
 
-    public int getPoint() {
-        return point;
+    public int getPoints() {
+        return points;
     }
 
     public String getName() {
@@ -18,11 +18,11 @@ public class Player {
     }
 
     public void scored() {
-        point++;
+        points++;
     }
 
     public String tennisScore() {
-        switch (point) {
+        switch (points) {
             case 0:
                 return "Love";
             case 1:
@@ -33,5 +33,13 @@ public class Player {
                 return "Forty";
         }
         return "";
+    }
+
+    public boolean hasLessThan(int points) {
+        return this.points < points;
+    }
+
+    public boolean hasLessThan(Player player) {
+        return this.points < player.points;
     }
 }

@@ -3,6 +3,7 @@ import tennisgame2.Player;
 import java.util.Objects;
 
 public class TennisGame2 implements TennisGame {
+    public static final int FORTY = 4;
     private Player player1;
     private Player player2;
 
@@ -12,15 +13,12 @@ public class TennisGame2 implements TennisGame {
     }
 
     public String getScore() {
-        String player1TennisScore = "";
-        String player2TennisScore = "";
-
         String score = "";
-        int player1Point = player1.getPoint();
-        int player2Point = player2.getPoint();
+        int player1Points = player1.getPoints();
+        int player2Points = player2.getPoints();
 
-        if (player1Point == player2Point) {
-            if (player1Point <= 3) {
+        if (player1Points == player2Points) {
+            if (player1.hasLessThan(FORTY)) {
                 score = player1.tennisScore();
                 score += "-All";
             } else {
@@ -28,25 +26,22 @@ public class TennisGame2 implements TennisGame {
             }
         }
 
-        if (player1Point != player2Point && player1Point < 4) {
-            player1TennisScore = player1.tennisScore();
-            player2TennisScore = player2.tennisScore();
-            score = player1TennisScore + "-" + player2TennisScore;
-        }
+        if (player1Points != player2Points && player1.hasLessThan(FORTY) && player2.hasLessThan(FORTY)) {
+            score = player1.tennisScore() + "-" + player2.tennisScore();
+        } else {
+            if (player2.hasLessThan(player1)) {
+                score = "Advantage " + player1.getName();
+            }
+            if (player1.hasLessThan(player2Points)) {
+                score = "Advantage " + player2.getName();
+            }
 
-        if (player1Point > player2Point && player2Point >= 3) {
-            score = "Advantage " + player1.getName();
-        }
-
-        if (player2Point > player1Point && player1Point >= 3) {
-            score = "Advantage " + player2.getName();
-        }
-
-        if (player1Point >= 4 && player2Point >= 0 && (player1Point - player2Point) >= 2) {
-            score = "Win for " + player1.getName();
-        }
-        if (player2Point >= 4 && player1Point >= 0 && (player2Point - player1Point) >= 2) {
-            score = "Win for " + player2.getName();
+            if (player1Points - player2Points >= 2) {
+                score = "Win for " + player1.getName();
+            }
+            if (player2Points - player1Points >= 2) {
+                score = "Win for " + player2.getName();
+            }
         }
         return score;
     }
