@@ -21,7 +21,7 @@ public class Player {
         point++;
     }
 
-    public String pointToTennisScore() {
+    public String tennisScore() {
         switch (point) {
             case 0:
                 return "Love";

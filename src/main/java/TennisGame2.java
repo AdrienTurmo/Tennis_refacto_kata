@@ -19,18 +19,18 @@ public class TennisGame2 implements TennisGame {
         int player1Point = player1.getPoint();
         int player2Point = player2.getPoint();
 
-        if (player1Point == player2Point && player1Point < 4) {
-            score = player1.pointToTennisScore();
-            score += "-All";
-        }
-
-        if (player1Point == player2Point && player1Point > 3) {
-            score = "Deuce";
+        if (player1Point == player2Point) {
+            if (player1Point <= 3) {
+                score = player1.tennisScore();
+                score += "-All";
+            } else {
+                score = "Deuce";
+            }
         }
 
         if (player1Point != player2Point && player1Point < 4) {
-            player1TennisScore = player1.pointToTennisScore();
-            player2TennisScore = player2.pointToTennisScore();
+            player1TennisScore = player1.tennisScore();
+            player2TennisScore = player2.tennisScore();
             score = player1TennisScore + "-" + player2TennisScore;
         }
 
