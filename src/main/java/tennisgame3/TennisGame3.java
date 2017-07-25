@@ -1,3 +1,5 @@
+package tennisgame3;
+
 import tennisgame3.Player;
 
 import java.util.Objects;
@@ -21,8 +23,8 @@ public class TennisGame3 implements TennisGame {
             if (isThereADraw()) {
                 return "Deuce";
             }
-            String playerWithHighestScore = player1.hasMorePointThan(player2) ? player1.getName() : player2.getName();
-            return scoreDifferenceIsOne() ? "Advantage " + playerWithHighestScore : "Win for " + playerWithHighestScore;
+            String playerWithHighestScore = player1.scoreDifferenceWith(player2) > 0 ? player1.getName() : player2.getName();
+            return (scoreDifferenceIsOne() ? "Advantage " : "Win for ") + playerWithHighestScore;
         }
     }
 

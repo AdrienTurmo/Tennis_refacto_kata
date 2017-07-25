@@ -7,6 +7,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+import tennisgame1.TennisGame1;
+import tennisgame2.TennisGame2;
+import tennisgame3.TennisGame3;
 
 @RunWith(Parameterized.class)
 public class TennisTest {
