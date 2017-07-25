@@ -5,9 +5,8 @@ import java.util.Objects;
 
 public class TennisGame3 implements TennisGame {
 
-    private static final int FORTY = 4;
-    private Player player2;
     private Player player1;
+    private Player player2;
 
     public TennisGame3(String player1name, String player2name) {
         player1 = new Player(player1name);
@@ -16,15 +15,14 @@ public class TennisGame3 implements TennisGame {
 
     public String getScore() {
         if (bothPlayerAreUnderForty()) {
-            String player1tennisScore = pointToTennisScore(player1.getPoints());
-            String player2tennisScore = pointToTennisScore(player2.getPoints());
-            return thereIsADraw() ? (player1tennisScore + "-All") : (player1tennisScore + "-" + player2tennisScore);
+            String player1tennisScore = player1.tennisScore();
+            String player2tennisScore = player2.tennisScore();
+            return isThereADraw() ? (player1tennisScore + "-All") : (player1tennisScore + "-" + player2tennisScore);
         } else {
-            if (thereIsADraw()) {
+            if (isThereADraw()) {
                 return "Deuce";
             }
-            String playerWithHighestScore;
-            playerWithHighestScore = player1.getPoints() > player2.getPoints() ? player1.getName() : player2.getName();
+            String playerWithHighestScore = player1.getPoints() > player2.getPoints() ? player1.getName() : player2.getName();
             return scoreDifferenceIsOne() ? "Advantage " + playerWithHighestScore : "Win for " + playerWithHighestScore;
         }
     }
@@ -42,15 +40,12 @@ public class TennisGame3 implements TennisGame {
         return Math.abs(player1.getPoints() - player2.getPoints()) == 1;
     }
 
-    private boolean thereIsADraw() {
+    private boolean isThereADraw() {
         return player1.getPoints() == player2.getPoints();
     }
 
-    private String pointToTennisScore(int playerScore) {
-        return TennisScore.tennisScoreOf(playerScore);
-    }
     private boolean bothPlayerAreUnderForty() {
-        return player1.getPoints() < FORTY && player2.getPoints() < FORTY;
+        return player1.hasLessThanForty() && player2.hasLessThanForty();
     }
 
 

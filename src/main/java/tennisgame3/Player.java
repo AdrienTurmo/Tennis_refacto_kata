@@ -20,4 +20,12 @@ public class Player {
     public int getPoints() {
         return points;
     }
+
+    public boolean hasLessThanForty() {
+        return points<=TennisScore.Forty.getScore();
+    }
+
+    public String tennisScore() {
+        return TennisScore.tennisScoreOf(points);
+    }
 }

@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76548da6-44c2-4d07-8a9e-e519b2593809" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TennisGame3.class" afterPath="$PROJECT_DIR$/target/classes/TennisGame3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TennisGame3.java" afterPath="$PROJECT_DIR$/src/main/java/TennisGame3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tennisgame3/Player.java" afterPath="$PROJECT_DIR$/src/main/java/tennisgame3/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" afterPath="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TennisGame3.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TennisGame3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="700">
+              <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -61,8 +62,8 @@
       <file leaf-file-name="TennisScore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="425">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -101,8 +102,8 @@
         <option value="$PROJECT_DIR$/src/main/java/tennisgame2/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/TennisGame2.java" />
         <option value="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tennisgame3/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/TennisGame3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tennisgame3/Player.java" />
       </list>
     </option>
   </component>
@@ -906,19 +907,17 @@
       <option name="project" value="LOCAL" />
       <updated>1500975253317</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="TennisGame3 : remove player2name and player2score fields">
+      <created>1500975378945</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1500975378945</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 31m 37s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 32m 38s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 32m 57s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 33m 20s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
@@ -938,6 +937,15 @@
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 36m 06s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 41m 44s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 41m 50s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 44m 04s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -998,7 +1006,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="score in has more than fifty to scoreEnum" />
     <MESSAGE value="almost calistanic" />
     <MESSAGE value="Class player calisthenic :boom: :baby:" />
     <MESSAGE value="Starting Refacto TennisGame2" />
@@ -1023,7 +1030,8 @@
     <MESSAGE value="TennisGame3 : extract scoreDifferenceIsOne" />
     <MESSAGE value="TennisGame3 : extract Player class" />
     <MESSAGE value="TennisGame3 : remove player1name and player1score fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : remove player1name and player1score fields" />
+    <MESSAGE value="TennisGame3 : remove player2name and player2score fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : remove player2name and player2score fields" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1266,14 +1274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1282,21 +1282,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="425">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>

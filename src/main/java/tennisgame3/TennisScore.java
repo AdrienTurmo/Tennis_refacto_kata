@@ -14,6 +14,10 @@ public enum TennisScore {
         this.score = score;
     }
 
+    public int getScore(){
+        return score;
+    }
+
     public static String tennisScoreOf(int playerScore) {
         return Arrays.stream(TennisScore.values())
                 .filter(tennisScore -> tennisScore.score == playerScore)
