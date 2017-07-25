@@ -21,14 +21,20 @@ public class TennisGame3 implements TennisGame {
     public String getScore() {
         if (bothPlayerAreUnderForty()) {
             String player1tennisScore = pointToTennisScore(player1score);
-            return thereIsADraw() ? (player1tennisScore + "-All") : (player1tennisScore + "-" + pointToTennisScore(player2score));
+            String player2tennisScore = pointToTennisScore(player2score);
+            return thereIsADraw() ? (player1tennisScore + "-All") : (player1tennisScore + "-" + player2tennisScore);
         } else {
-            if (thereIsADraw())
+            if (thereIsADraw()) {
                 return "Deuce";
+            }
             String playerWithHighestScore;
             playerWithHighestScore = player1score > player2score ? player1name : player2name;
-            return ((player1score - player2score)*(player1score - player2score) == 1) ? "Advantage " + playerWithHighestScore : "Win for " + playerWithHighestScore;
+            return scoreDifferenceIsOne() ? "Advantage " + playerWithHighestScore : "Win for " + playerWithHighestScore;
         }
+    }
+
+    private boolean scoreDifferenceIsOne() {
+        return Math.abs(player1score - player2score) == 1;
     }
 
     private boolean thereIsADraw() {
@@ -36,7 +42,7 @@ public class TennisGame3 implements TennisGame {
     }
 
     private String pointToTennisScore(int playerScore) {
-        return String.valueOf(tennisScores[playerScore]);
+        return tennisScores[playerScore].name();
     }
 
     private boolean bothPlayerAreUnderForty() {

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76548da6-44c2-4d07-8a9e-e519b2593809" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TennisGame3.class" afterPath="$PROJECT_DIR$/target/classes/TennisGame3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TennisGame3.java" afterPath="$PROJECT_DIR$/src/main/java/TennisGame3.java" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="TennisGame3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            <state relative-caret-position="467">
+              <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -834,19 +833,24 @@
       <option name="project" value="LOCAL" />
       <updated>1500972930842</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="TennisGame3 : create enum TennisScore">
+      <created>1500973519507</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1500973519507</updated>
+    </task>
+    <task id="LOCAL-00031" summary="TennisGame3 : extract thereIsADraw method">
+      <created>1500973690432</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1500973690432</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 06m 35s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 12m 13s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 13m 03s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 14m 32s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
@@ -866,6 +870,15 @@
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 05m 06s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 08m 20s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 09m 28s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 14m 11s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -926,9 +939,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refacto : extract methods" />
-    <MESSAGE value="Introduce player class" />
-    <MESSAGE value="Encapsulate name and score onto Player" />
     <MESSAGE value="transferred score comparison to Player" />
     <MESSAGE value="extract all methode to Player" />
     <MESSAGE value="introducing enum Score" />
@@ -951,7 +961,10 @@
     <MESSAGE value="TennisGame2 : simplify if" />
     <MESSAGE value="TennisGame3 : rename variables and fields" />
     <MESSAGE value="TennisGame3 : extract method bothPlayerAreUnderForty" />
-    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : extract method bothPlayerAreUnderForty" />
+    <MESSAGE value="TennisGame3 : create enum TennisScore" />
+    <MESSAGE value="TennisGame3 : extract therIsADraw method" />
+    <MESSAGE value="TennisGame3 : extract thereIsADraw method" />
+    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : extract thereIsADraw method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1204,8 +1217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="467">
+          <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
