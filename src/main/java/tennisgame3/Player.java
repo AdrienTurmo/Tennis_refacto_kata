@@ -3,7 +3,7 @@ package tennisgame3;
 public class Player {
 
     private String name;
-    private int score = 0;
+    private int points = 0;
 
     public Player(String name) {
         this.name = name;
@@ -14,6 +14,10 @@ public class Player {
     }
 
     public void scored() {
-        score++;
+        points++;
+    }
+
+    public int getPoints() {
+        return points;
     }
 }
