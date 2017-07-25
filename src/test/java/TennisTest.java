@@ -78,20 +78,20 @@ public class TennisTest {
 
     @Test
     public void checkAllScoresTennisGame1() {
-        TennisGame1 game = new TennisGame1("player1", "player2");
-        checkAllScores(game);
+        TennisGame1 game1 = new TennisGame1("player1", "player2");
+        checkAllScores(game1);
     }
 
     @Test
     public void checkAllScoresTennisGame2() {
-        TennisGame2 game = new TennisGame2("player1", "player2");
-        checkAllScores(game);
+        TennisGame2 game2 = new TennisGame2("player1", "player2");
+        checkAllScores(game2);
     }
 
     @Test
     public void checkAllScoresTennisGame3() {
-        TennisGame3 game = new TennisGame3("player1", "player2");
-        checkAllScores(game);
+        TennisGame3 game3 = new TennisGame3("player1", "player2");
+        checkAllScores(game3);
     }
 
 }

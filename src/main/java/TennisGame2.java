@@ -6,7 +6,7 @@ public class TennisGame2 implements TennisGame {
     private Player player1;
     private Player player2;
 
-    TennisGame2(String player1Name, String player2Name) {
+    public TennisGame2(String player1Name, String player2Name) {
         this.player1 = new Player(player1Name);
         this.player2 = new Player(player2Name);
     }

@@ -25,10 +25,6 @@ public class Player {
         return TennisScore.tennisScoreOf(points);
     }
 
-    public boolean hasMorePointThan(Player oppositePlayer) {
-        return this.points > oppositePlayer.points;
-    }
-
     public int scoreDifferenceWith(Player oppositePlayer) {
         return this.points - oppositePlayer.points;
     }
