@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76548da6-44c2-4d07-8a9e-e519b2593809" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TennisGame3.class" afterPath="$PROJECT_DIR$/target/classes/TennisGame3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TennisGame3.java" afterPath="$PROJECT_DIR$/src/main/java/TennisGame3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tennisgame3/Player.java" afterPath="$PROJECT_DIR$/src/main/java/tennisgame3/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" afterPath="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TennisGame3.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TennisGame3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+            <state relative-caret-position="250">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+            <state relative-caret-position="267">
+              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -914,19 +914,17 @@
       <option name="project" value="LOCAL" />
       <updated>1500975378945</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="TennisGame3 : create method tennisScore">
+      <created>1500975858893</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1500975858893</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 33m 20s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 33m 33s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 33m 55s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 35m 26s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
@@ -946,6 +944,15 @@
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 44m 04s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 46m 52s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 48m 41s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 49m 26s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1006,7 +1013,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="almost calistanic" />
     <MESSAGE value="Class player calisthenic :boom: :baby:" />
     <MESSAGE value="Starting Refacto TennisGame2" />
     <MESSAGE value="TennisGame2 : P1res and P2res converted to local variables" />
@@ -1031,7 +1037,8 @@
     <MESSAGE value="TennisGame3 : extract Player class" />
     <MESSAGE value="TennisGame3 : remove player1name and player1score fields" />
     <MESSAGE value="TennisGame3 : remove player2name and player2score fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : remove player2name and player2score fields" />
+    <MESSAGE value="TennisGame3 : create method tennisScore" />
+    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : create method tennisScore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1290,21 +1297,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="267">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="250">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

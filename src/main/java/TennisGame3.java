@@ -1,5 +1,4 @@
 import tennisgame3.Player;
-import tennisgame3.TennisScore;
 
 import java.util.Objects;
 
@@ -22,7 +21,7 @@ public class TennisGame3 implements TennisGame {
             if (isThereADraw()) {
                 return "Deuce";
             }
-            String playerWithHighestScore = player1.getPoints() > player2.getPoints() ? player1.getName() : player2.getName();
+            String playerWithHighestScore = player1.hasMorePointThan(player2) ? player1.getName() : player2.getName();
             return scoreDifferenceIsOne() ? "Advantage " + playerWithHighestScore : "Win for " + playerWithHighestScore;
         }
     }
@@ -30,18 +29,17 @@ public class TennisGame3 implements TennisGame {
     public void wonPoint(String playerName) {
         if (Objects.equals(playerName, player1.getName())) {
             player1.scored();
-        }
-        else {
+        } else {
             player2.scored();
         }
     }
 
     private boolean scoreDifferenceIsOne() {
-        return Math.abs(player1.getPoints() - player2.getPoints()) == 1;
+        return Math.abs(player1.scoreDifferenceWith(player2)) == 1;
     }
 
     private boolean isThereADraw() {
-        return player1.getPoints() == player2.getPoints();
+        return player1.scoreDifferenceWith(player2) == 0;
     }
 
     private boolean bothPlayerAreUnderForty() {

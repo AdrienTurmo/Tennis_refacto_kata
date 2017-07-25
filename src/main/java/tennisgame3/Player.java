@@ -17,15 +17,19 @@ public class Player {
         points++;
     }
 
-    public int getPoints() {
-        return points;
-    }
-
     public boolean hasLessThanForty() {
         return points<=TennisScore.Forty.getScore();
     }
 
     public String tennisScore() {
         return TennisScore.tennisScoreOf(points);
+    }
+
+    public boolean hasMorePointThan(Player oppositePlayer) {
+        return this.points > oppositePlayer.points;
+    }
+
+    public int scoreDifferenceWith(Player oppositePlayer) {
+        return this.points - oppositePlayer.points;
     }
 }
