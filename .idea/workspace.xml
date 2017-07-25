@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76548da6-44c2-4d07-8a9e-e519b2593809" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TennisGame3.class" afterPath="$PROJECT_DIR$/target/classes/TennisGame3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TennisGame3.java" afterPath="$PROJECT_DIR$/src/main/java/TennisGame3.java" />
     </list>
@@ -38,8 +39,8 @@
       <file leaf-file-name="TennisGame3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="421">
+              <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -804,13 +805,17 @@
       <option name="project" value="LOCAL" />
       <updated>1500912904038</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="TennisGame3 : rename variables and fields">
+      <created>1500972753815</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1500972753815</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 04m 27s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 04m 34s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
     </history-entry>
@@ -836,6 +841,9 @@
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 10h 52m 13s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 10h 53m 59s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -920,7 +928,8 @@
     <MESSAGE value="TennisGame2 : getter for point in Player class deleted" />
     <MESSAGE value="TennisGame2 : regroup and simplify if statement + extract hasunderforty" />
     <MESSAGE value="TennisGame2 : simplify if" />
-    <option name="LAST_COMMIT_MESSAGE" value="TennisGame2 : simplify if" />
+    <MESSAGE value="TennisGame3 : rename variables and fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : rename variables and fields" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1165,8 +1174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state relative-caret-position="421">
+          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
         </state>
       </provider>

@@ -2,6 +2,7 @@ import java.util.Objects;
 
 public class TennisGame3 implements TennisGame {
 
+    public static final int FORTY = 4;
     private int player1score;
     private int player2score;
     private String player1name;
@@ -14,16 +15,21 @@ public class TennisGame3 implements TennisGame {
 
     public String getScore() {
         String tennisScore;
-        if (player1score < 4 && player2score < 4) {
+        if (bothPlayerAreUnderForty()) {
             String[] tennisScores = new String[]{"Love", "Fifteen", "Thirty", "Forty"};
             tennisScore = tennisScores[player1score];
             return (player1score == player2score) ? tennisScore + "-All" : tennisScore + "-" + tennisScores[player2score];
         } else {
             if (player1score == player2score)
                 return "Deuce";
-            tennisScore = player1score > player2score ? player1name : player2name;
-            return ((player1score - player2score)*(player1score - player2score) == 1) ? "Advantage " + tennisScore : "Win for " + tennisScore;
+            String playerWithHighestScore;
+            playerWithHighestScore = player1score > player2score ? player1name : player2name;
+            return ((player1score - player2score)*(player1score - player2score) == 1) ? "Advantage " + playerWithHighestScore : "Win for " + playerWithHighestScore;
         }
+    }
+
+    private boolean bothPlayerAreUnderForty() {
+        return player1score < FORTY && player2score < FORTY;
     }
 
     public void wonPoint(String playerName) {
