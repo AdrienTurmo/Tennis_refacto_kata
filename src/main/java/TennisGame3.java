@@ -1,5 +1,3 @@
-package tennisgame3;
-
 import tennisgame3.Player;
 
 import java.util.Objects;

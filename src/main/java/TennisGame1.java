@@ -1,5 +1,3 @@
-package tennisgame1;
-
 import tennisgame1.Player;
 
 public class TennisGame1 implements TennisGame {
