@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76548da6-44c2-4d07-8a9e-e519b2593809" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/tennisgame3/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TennisGame3.class" afterPath="$PROJECT_DIR$/target/classes/TennisGame3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TennisGame3.java" afterPath="$PROJECT_DIR$/src/main/java/TennisGame3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" afterPath="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,8 +41,8 @@
       <file leaf-file-name="TennisGame3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+            <state relative-caret-position="238">
+              <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,11 +50,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TennisScore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="525">
+              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -63,8 +75,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,6 +103,7 @@
         <option value="$PROJECT_DIR$/src/main/java/tennisgame2/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/TennisGame2.java" />
         <option value="$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tennisgame3/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/TennisGame3.java" />
       </list>
     </option>
@@ -236,6 +249,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tennisgame3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tennis_refacto_kata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tennis_refacto_kata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="tennisgame2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -280,6 +319,7 @@
       <recent name="Player" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="tennisgame3" />
       <recent name="tennisgame2" />
       <recent name="" />
       <recent name="tennisgame1" />
@@ -847,22 +887,17 @@
       <option name="project" value="LOCAL" />
       <updated>1500973690432</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="TennisGame3 : extract scoreDifferenceIsOne">
+      <created>1500974063081</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1500974063081</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TennisTest_checkAllScoresTennisGame2 - 2017.07.24 at 18h 14m 32s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 10h 48m 55s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 10h 52m 13s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 10h 53m 59s.xml">
-      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 10h 56m 27s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
@@ -879,6 +914,18 @@
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 14m 11s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 22m 49s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 23m 32s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 25m 31s.xml">
+      <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TennisTest_checkAllScoresTennisGame3 - 2017.07.25 at 11h 31m 37s.xml">
       <configuration name="TennisTest.checkAllScoresTennisGame3" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -939,7 +986,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="transferred score comparison to Player" />
     <MESSAGE value="extract all methode to Player" />
     <MESSAGE value="introducing enum Score" />
     <MESSAGE value="score in has more than fifty to scoreEnum" />
@@ -964,7 +1010,8 @@
     <MESSAGE value="TennisGame3 : create enum TennisScore" />
     <MESSAGE value="TennisGame3 : extract therIsADraw method" />
     <MESSAGE value="TennisGame3 : extract thereIsADraw method" />
-    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : extract thereIsADraw method" />
+    <MESSAGE value="TennisGame3 : extract scoreDifferenceIsOne" />
+    <option name="LAST_COMMIT_MESSAGE" value="TennisGame3 : extract scoreDifferenceIsOne" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1209,16 +1256,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/TennisScore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tennisgame3/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TennisGame3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+        <state relative-caret-position="238">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
