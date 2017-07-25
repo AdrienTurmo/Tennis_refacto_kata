@@ -1,4 +1,8 @@
+import tennisgame3.TennisScore;
+
 import java.util.Objects;
+
+import static tennisgame3.TennisScore.*;
 
 public class TennisGame3 implements TennisGame {
 
@@ -7,6 +11,7 @@ public class TennisGame3 implements TennisGame {
     private int player2score;
     private String player1name;
     private String player2name;
+    private TennisScore[] tennisScores = new TennisScore[]{Love, Fifteen, Thirty, Forty};
 
     public TennisGame3(String player1name, String player2name) {
         this.player1name = player1name;
@@ -14,11 +19,10 @@ public class TennisGame3 implements TennisGame {
     }
 
     public String getScore() {
-        String tennisScore;
         if (bothPlayerAreUnderForty()) {
-            String[] tennisScores = new String[]{"Love", "Fifteen", "Thirty", "Forty"};
-            tennisScore = tennisScores[player1score];
-            return (player1score == player2score) ? tennisScore + "-All" : tennisScore + "-" + tennisScores[player2score];
+            String tennisScore = "";
+            tennisScore = pointToTennisScore(player1score);
+            return (player1score == player2score) ? tennisScore + "-All" : tennisScore + "-" + pointToTennisScore(player2score);
         } else {
             if (player1score == player2score)
                 return "Deuce";
@@ -26,6 +30,10 @@ public class TennisGame3 implements TennisGame {
             playerWithHighestScore = player1score > player2score ? player1name : player2name;
             return ((player1score - player2score)*(player1score - player2score) == 1) ? "Advantage " + playerWithHighestScore : "Win for " + playerWithHighestScore;
         }
+    }
+
+    private String pointToTennisScore(int playerScore) {
+        return String.valueOf(tennisScores[playerScore]);
     }
 
     private boolean bothPlayerAreUnderForty() {
